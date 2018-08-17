@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C122299A19F18F0D00BEC005 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C122299919F18F0D00BEC005 /* Foundation.framework */; };
+		C122299C19F18F0D00BEC005 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C122299B19F18F0D00BEC005 /* CoreGraphics.framework */; };
+		C122299E19F18F0D00BEC005 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C122299D19F18F0D00BEC005 /* UIKit.framework */; };
+		C12229A019F18F0D00BEC005 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C122299F19F18F0D00BEC005 /* GLKit.framework */; };
+		C12229A219F18F0D00BEC005 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C12229A119F18F0D00BEC005 /* OpenGLES.framework */; };
+		C12229A819F18F0D00BEC005 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C12229A619F18F0D00BEC005 /* InfoPlist.strings */; };
+		C12229AA19F18F0D00BEC005 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C12229A919F18F0D00BEC005 /* main.m */; };
+		C12229AE19F18F0D00BEC005 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C12229AD19F18F0D00BEC005 /* AppDelegate.m */; };
+		C12229B119F18F0D00BEC005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C12229AF19F18F0D00BEC005 /* Main.storyboard */; };
+		C12229BA19F18F0D00BEC005 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12229B919F18F0D00BEC005 /* Images.xcassets */; };
+		C12229C119F18F0D00BEC005 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C12229C019F18F0D00BEC005 /* XCTest.framework */; };
+		C12229C219F18F0D00BEC005 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C122299919F18F0D00BEC005 /* Foundation.framework */; };
+		C12229C319F18F0D00BEC005 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C122299D19F18F0D00BEC005 /* UIKit.framework */; };
+		C12229CB19F18F0D00BEC005 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C12229C919F18F0D00BEC005 /* InfoPlist.strings */; };
+		C12229CD19F18F0D00BEC005 /* MandelbrotES3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C12229CC19F18F0D00BEC005 /* MandelbrotES3Tests.m */; };
+		C12229D919F18F7A00BEC005 /* IMG_6848-58.PNG in Resources */ = {isa = PBXBuildFile; fileRef = C12229D619F18F7A00BEC005 /* IMG_6848-58.PNG */; };
+		C12229DA19F18F7A00BEC005 /* IMG_6848-80.PNG in Resources */ = {isa = PBXBuildFile; fileRef = C12229D719F18F7A00BEC005 /* IMG_6848-80.PNG */; };
+		C12229DB19F18F7A00BEC005 /* IMG_6848-120.PNG in Resources */ = {isa = PBXBuildFile; fileRef = C12229D819F18F7A00BEC005 /* IMG_6848-120.PNG */; };
+		C12229E019F18FC500BEC005 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C12229DD19F18FC500BEC005 /* Shader.vsh */; };
+		C12229E119F18FC500BEC005 /* ShaderJ.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C12229DE19F18FC500BEC005 /* ShaderJ.fsh */; };
+		C12229E219F18FC500BEC005 /* ShaderM.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C12229DF19F18FC500BEC005 /* ShaderM.fsh */; };
+		C12229E519F18FD300BEC005 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12229E419F18FD300BEC005 /* ViewController.m */; };
+		C1262E591A04A862003E76CF /* ShaderC.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C1262E581A04A862003E76CF /* ShaderC.fsh */; };
+		C1262E5B1A04A9ED003E76CF /* ShaderC.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C1262E5A1A04A9ED003E76CF /* ShaderC.vsh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C12229C419F18F0D00BEC005 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C122298E19F18F0D00BEC005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C122299519F18F0D00BEC005;
+			remoteInfo = MandelbrotES3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C122299619F18F0D00BEC005 /* MandelbrotES3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MandelbrotES3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C122299919F18F0D00BEC005 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C122299B19F18F0D00BEC005 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C122299D19F18F0D00BEC005 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C122299F19F18F0D00BEC005 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		C12229A119F18F0D00BEC005 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C12229A519F18F0D00BEC005 /* MandelbrotES3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MandelbrotES3-Info.plist"; sourceTree = "<group>"; };
+		C12229A719F18F0D00BEC005 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C12229A919F18F0D00BEC005 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C12229AB19F18F0D00BEC005 /* MandelbrotES3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MandelbrotES3-Prefix.pch"; sourceTree = "<group>"; };
+		C12229AC19F18F0D00BEC005 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C12229AD19F18F0D00BEC005 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C12229B019F18F0D00BEC005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C12229B919F18F0D00BEC005 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C12229BF19F18F0D00BEC005 /* MandelbrotES3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MandelbrotES3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C12229C019F18F0D00BEC005 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C12229C819F18F0D00BEC005 /* MandelbrotES3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MandelbrotES3Tests-Info.plist"; sourceTree = "<group>"; };
+		C12229CA19F18F0D00BEC005 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C12229CC19F18F0D00BEC005 /* MandelbrotES3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MandelbrotES3Tests.m; sourceTree = "<group>"; };
+		C12229D619F18F7A00BEC005 /* IMG_6848-58.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IMG_6848-58.PNG"; sourceTree = "<group>"; };
+		C12229D719F18F7A00BEC005 /* IMG_6848-80.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IMG_6848-80.PNG"; sourceTree = "<group>"; };
+		C12229D819F18F7A00BEC005 /* IMG_6848-120.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IMG_6848-120.PNG"; sourceTree = "<group>"; };
+		C12229DD19F18FC500BEC005 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+		C12229DE19F18FC500BEC005 /* ShaderJ.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ShaderJ.fsh; sourceTree = "<group>"; };
+		C12229DF19F18FC500BEC005 /* ShaderM.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ShaderM.fsh; sourceTree = "<group>"; };
+		C12229E319F18FD300BEC005 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C12229E419F18FD300BEC005 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C1262E581A04A862003E76CF /* ShaderC.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ShaderC.fsh; sourceTree = "<group>"; };
+		C1262E5A1A04A9ED003E76CF /* ShaderC.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ShaderC.vsh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C122299319F18F0D00BEC005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12229A219F18F0D00BEC005 /* OpenGLES.framework in Frameworks */,
+				C122299C19F18F0D00BEC005 /* CoreGraphics.framework in Frameworks */,
+				C122299E19F18F0D00BEC005 /* UIKit.framework in Frameworks */,
+				C12229A019F18F0D00BEC005 /* GLKit.framework in Frameworks */,
+				C122299A19F18F0D00BEC005 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C12229BC19F18F0D00BEC005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12229C119F18F0D00BEC005 /* XCTest.framework in Frameworks */,
+				C12229C319F18F0D00BEC005 /* UIKit.framework in Frameworks */,
+				C12229C219F18F0D00BEC005 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C122298D19F18F0D00BEC005 = {
+			isa = PBXGroup;
+			children = (
+				C12229A319F18F0D00BEC005 /* MandelbrotES3 */,
+				C12229C619F18F0D00BEC005 /* MandelbrotES3Tests */,
+				C122299819F18F0D00BEC005 /* Frameworks */,
+				C122299719F18F0D00BEC005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C122299719F18F0D00BEC005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C122299619F18F0D00BEC005 /* MandelbrotES3.app */,
+				C12229BF19F18F0D00BEC005 /* MandelbrotES3Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C122299819F18F0D00BEC005 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C122299919F18F0D00BEC005 /* Foundation.framework */,
+				C122299B19F18F0D00BEC005 /* CoreGraphics.framework */,
+				C122299D19F18F0D00BEC005 /* UIKit.framework */,
+				C122299F19F18F0D00BEC005 /* GLKit.framework */,
+				C12229A119F18F0D00BEC005 /* OpenGLES.framework */,
+				C12229C019F18F0D00BEC005 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C12229A319F18F0D00BEC005 /* MandelbrotES3 */ = {
+			isa = PBXGroup;
+			children = (
+				C12229AC19F18F0D00BEC005 /* AppDelegate.h */,
+				C12229AD19F18F0D00BEC005 /* AppDelegate.m */,
+				C12229AF19F18F0D00BEC005 /* Main.storyboard */,
+				C12229B919F18F0D00BEC005 /* Images.xcassets */,
+				C12229D619F18F7A00BEC005 /* IMG_6848-58.PNG */,
+				C12229D719F18F7A00BEC005 /* IMG_6848-80.PNG */,
+				C12229D819F18F7A00BEC005 /* IMG_6848-120.PNG */,
+				C12229E319F18FD300BEC005 /* ViewController.h */,
+				C12229E419F18FD300BEC005 /* ViewController.m */,
+				C12229DC19F18FC500BEC005 /* Shaders */,
+				C12229A419F18F0D00BEC005 /* Supporting Files */,
+			);
+			path = MandelbrotES3;
+			sourceTree = "<group>";
+		};
+		C12229A419F18F0D00BEC005 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C12229A519F18F0D00BEC005 /* MandelbrotES3-Info.plist */,
+				C12229A619F18F0D00BEC005 /* InfoPlist.strings */,
+				C12229A919F18F0D00BEC005 /* main.m */,
+				C12229AB19F18F0D00BEC005 /* MandelbrotES3-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C12229C619F18F0D00BEC005 /* MandelbrotES3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C12229CC19F18F0D00BEC005 /* MandelbrotES3Tests.m */,
+				C12229C719F18F0D00BEC005 /* Supporting Files */,
+			);
+			path = MandelbrotES3Tests;
+			sourceTree = "<group>";
+		};
+		C12229C719F18F0D00BEC005 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C12229C819F18F0D00BEC005 /* MandelbrotES3Tests-Info.plist */,
+				C12229C919F18F0D00BEC005 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C12229DC19F18FC500BEC005 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				C12229DD19F18FC500BEC005 /* Shader.vsh */,
+				C1262E5A1A04A9ED003E76CF /* ShaderC.vsh */,
+				C1262E581A04A862003E76CF /* ShaderC.fsh */,
+				C12229DE19F18FC500BEC005 /* ShaderJ.fsh */,
+				C12229DF19F18FC500BEC005 /* ShaderM.fsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C122299519F18F0D00BEC005 /* MandelbrotES3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C12229D019F18F0D00BEC005 /* Build configuration list for PBXNativeTarget "MandelbrotES3" */;
+			buildPhases = (
+				C122299219F18F0D00BEC005 /* Sources */,
+				C122299319F18F0D00BEC005 /* Frameworks */,
+				C122299419F18F0D00BEC005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MandelbrotES3;
+			productName = MandelbrotES3;
+			productReference = C122299619F18F0D00BEC005 /* MandelbrotES3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C12229BE19F18F0D00BEC005 /* MandelbrotES3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C12229D319F18F0D00BEC005 /* Build configuration list for PBXNativeTarget "MandelbrotES3Tests" */;
+			buildPhases = (
+				C12229BB19F18F0D00BEC005 /* Sources */,
+				C12229BC19F18F0D00BEC005 /* Frameworks */,
+				C12229BD19F18F0D00BEC005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C12229C519F18F0D00BEC005 /* PBXTargetDependency */,
+			);
+			name = MandelbrotES3Tests;
+			productName = MandelbrotES3Tests;
+			productReference = C12229BF19F18F0D00BEC005 /* MandelbrotES3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C122298E19F18F0D00BEC005 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Justin Fleischauer";
+				TargetAttributes = {
+					C122299519F18F0D00BEC005 = {
+						DevelopmentTeam = D86D8PV6C4;
+					};
+					C12229BE19F18F0D00BEC005 = {
+						TestTargetID = C122299519F18F0D00BEC005;
+					};
+				};
+			};
+			buildConfigurationList = C122299119F18F0D00BEC005 /* Build configuration list for PBXProject "MandelbrotES3-2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C122298D19F18F0D00BEC005;
+			productRefGroup = C122299719F18F0D00BEC005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C122299519F18F0D00BEC005 /* MandelbrotES3 */,
+				C12229BE19F18F0D00BEC005 /* MandelbrotES3Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C122299419F18F0D00BEC005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12229BA19F18F0D00BEC005 /* Images.xcassets in Resources */,
+				C12229E019F18FC500BEC005 /* Shader.vsh in Resources */,
+				C12229A819F18F0D00BEC005 /* InfoPlist.strings in Resources */,
+				C12229E219F18FC500BEC005 /* ShaderM.fsh in Resources */,
+				C12229E119F18FC500BEC005 /* ShaderJ.fsh in Resources */,
+				C12229D919F18F7A00BEC005 /* IMG_6848-58.PNG in Resources */,
+				C1262E591A04A862003E76CF /* ShaderC.fsh in Resources */,
+				C1262E5B1A04A9ED003E76CF /* ShaderC.vsh in Resources */,
+				C12229DB19F18F7A00BEC005 /* IMG_6848-120.PNG in Resources */,
+				C12229B119F18F0D00BEC005 /* Main.storyboard in Resources */,
+				C12229DA19F18F7A00BEC005 /* IMG_6848-80.PNG in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C12229BD19F18F0D00BEC005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12229CB19F18F0D00BEC005 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C122299219F18F0D00BEC005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12229E519F18FD300BEC005 /* ViewController.m in Sources */,
+				C12229AE19F18F0D00BEC005 /* AppDelegate.m in Sources */,
+				C12229AA19F18F0D00BEC005 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C12229BB19F18F0D00BEC005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12229CD19F18F0D00BEC005 /* MandelbrotES3Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C12229C519F18F0D00BEC005 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C122299519F18F0D00BEC005 /* MandelbrotES3 */;
+			targetProxy = C12229C419F18F0D00BEC005 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C12229A619F18F0D00BEC005 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C12229A719F18F0D00BEC005 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C12229AF19F18F0D00BEC005 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C12229B019F18F0D00BEC005 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C12229C919F18F0D00BEC005 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C12229CA19F18F0D00BEC005 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C12229CE19F18F0D00BEC005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C12229CF19F18F0D00BEC005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C12229D119F18F0D00BEC005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = D86D8PV6C4;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MandelbrotES3/MandelbrotES3-Prefix.pch";
+				INFOPLIST_FILE = "MandelbrotES3/MandelbrotES3-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = warkmore.MandelbrotES3remix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C12229D219F18F0D00BEC005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = D86D8PV6C4;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MandelbrotES3/MandelbrotES3-Prefix.pch";
+				INFOPLIST_FILE = "MandelbrotES3/MandelbrotES3-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = warkmore.MandelbrotES3remix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C12229D419F18F0D00BEC005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MandelbrotES3.app/MandelbrotES3";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MandelbrotES3/MandelbrotES3-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MandelbrotES3Tests/MandelbrotES3Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C12229D519F18F0D00BEC005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MandelbrotES3.app/MandelbrotES3";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MandelbrotES3/MandelbrotES3-Prefix.pch";
+				INFOPLIST_FILE = "MandelbrotES3Tests/MandelbrotES3Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C122299119F18F0D00BEC005 /* Build configuration list for PBXProject "MandelbrotES3-2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C12229CE19F18F0D00BEC005 /* Debug */,
+				C12229CF19F18F0D00BEC005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C12229D019F18F0D00BEC005 /* Build configuration list for PBXNativeTarget "MandelbrotES3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C12229D119F18F0D00BEC005 /* Debug */,
+				C12229D219F18F0D00BEC005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C12229D319F18F0D00BEC005 /* Build configuration list for PBXNativeTarget "MandelbrotES3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C12229D419F18F0D00BEC005 /* Debug */,
+				C12229D519F18F0D00BEC005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C122298E19F18F0D00BEC005 /* Project object */;
+}
