@@ -303,7 +303,7 @@ void releaseData(void *info, const void *data, size_t dataSize)
     UIActionSheet *saveSheet;
     
     float threshold;
-    if (UIDeviceOrientationIsPortrait(self.interfaceOrientation))
+    if (UIDeviceOrientationIsPortrait([UIDevice currentDevice].orientation))
     {
       threshold = height/2;
     }
@@ -338,7 +338,7 @@ void releaseData(void *info, const void *data, size_t dataSize)
   float scaledHeight;
   float scaledWidth;
   
-  if (UIDeviceOrientationIsPortrait(self.interfaceOrientation))
+  if (UIDeviceOrientationIsPortrait([UIDevice currentDevice].orientation))
   {
   float width  = self.view.frame.size.width;
   float height = self.view.frame.size.height;
@@ -699,12 +699,16 @@ void releaseData(void *info, const void *data, size_t dataSize)
         glDeleteProgram(_programM);
         _programM = 0;
     }
+    
+    if (_programJ) {
+        glDeleteProgram(_programJ);
+        _programJ = 0;
+    }
 
-  if (_programJ) {
-    glDeleteProgram(_programJ);
-    _programJ = 0;
-  }
-
+    if (_programC) {
+        glDeleteProgram(_programC);
+        _programC = 0;
+    }
 
 }
 
@@ -726,7 +730,7 @@ void releaseData(void *info, const void *data, size_t dataSize)
    if (useJulia)
     {
     glReadPixels(0, 0, width*(int)screenScale-1, height*(int)screenScale-1, GL_RGBA, GL_UNSIGNED_BYTE, mandlebrotTexture);
-      if (UIDeviceOrientationIsPortrait(self.interfaceOrientation))
+      if (UIDeviceOrientationIsPortrait([UIDevice currentDevice].orientation))
       {
         glReadPixels(0, 0, width*(int)screenScale-1, height*(int)screenScale-1, GL_RGBA, GL_UNSIGNED_BYTE, mandlebrotTexture);
         glReadPixels(0, 0, width*(int)screenScale-1, height*(int)screenScale-1, GL_RGBA, GL_UNSIGNED_BYTE, juliaTexture+((width*(int)screenScale-1) * (height*(int)screenScale-1) * 4 ));
@@ -740,7 +744,7 @@ void releaseData(void *info, const void *data, size_t dataSize)
     }
     else if (!useMandlebrot)
     {
-      if (UIDeviceOrientationIsPortrait(self.interfaceOrientation))
+      if (UIDeviceOrientationIsPortrait([UIDevice currentDevice].orientation))
       {
         glReadPixels(0, 0, width*(int)screenScale-1, height*(int)screenScale-1, GL_RGBA, GL_UNSIGNED_BYTE, juliaTexture);
       }
@@ -767,7 +771,7 @@ void releaseData(void *info, const void *data, size_t dataSize)
     glEnableVertexAttribArray(GLKVertexAttribPosition);
     glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, sizeof(GLfloat)*3, BUFFER_OFFSET(0));
 
-    aspect = fabsf(self.view.bounds.size.width / self.view.bounds.size.height);
+    aspect = fabs(self.view.bounds.size.width / self.view.bounds.size.height);
     
     glUseProgram(_programM);
     glUniform1f(glGetUniformLocation(_programM, "scaleFactor"), scaleFactor);
@@ -778,7 +782,7 @@ void releaseData(void *info, const void *data, size_t dataSize)
   {
     glUseProgram(_programJ);
     glUniform1f(glGetUniformLocation(_programJ, "scaleFactor"), juliaScaleFactor);
-    glUniform1f(glGetUniformLocation(_programJ, "aspectFactor"), fabsf(self.view.bounds.size.width / self.view.bounds.size.height));
+    glUniform1f(glGetUniformLocation(_programJ, "aspectFactor"), fabs(self.view.bounds.size.width / self.view.bounds.size.height));
     glUniform2f(glGetUniformLocation(_programJ, "setParams"), initialX, initialY);
     glUniform2f(glGetUniformLocation(_programJ, "moveParams"), juliaX, juliaY);
     
@@ -789,7 +793,7 @@ void releaseData(void *info, const void *data, size_t dataSize)
     float width  = self.view.frame.size.width;
     float height = self.view.frame.size.height;
 
-    if (UIDeviceOrientationIsPortrait(self.interfaceOrientation))
+    if (UIDeviceOrientationIsPortrait([UIDevice currentDevice].orientation))
       glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width*(int)screenScale-1, (height*(int)screenScale*2)-2, 0, GL_RGBA, GL_UNSIGNED_BYTE, juliaTexture);
     else
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, height*(int)screenScale-1, (width*(int)screenScale*2)-2, 0, GL_RGBA, GL_UNSIGNED_BYTE, juliaTexture);
